@@ -29,3 +29,9 @@ nmap <F2> <ESC>:NERDTreeToggle<RETURN>
 "php 缩进
 let PHP_vintage_case_default_indent=1
 colorscheme jellybeans
+
+" PHP documenter script bound to Control-P
+autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
+autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
+autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR> 
+let g:pdv_cfg_Author = "chenchuanbao <chenchuanbao@youku.com>"
