@@ -30,8 +30,13 @@ nmap <F2> <ESC>:NERDTreeToggle<RETURN>
 let PHP_vintage_case_default_indent=1
 colorscheme jellybeans
 
-" PHP documenter script bound to Control-P
+"PHP documenter script bound to Control-P
 autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
 autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
 autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR> 
 let g:pdv_cfg_Author = "chenchuanbao <chenchuanbao@youku.com>"
+
+"taglist
+let Tlist_Show_One_File=1 "不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Exit_OnlyWindow=1 "如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Use_Right_Window=1 "在右侧窗口中显示taglist窗口
