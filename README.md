@@ -25,7 +25,7 @@ $ git push origin master
 
 同步到另一台电脑
 ===
-$ git clone git@github.com:linguofeng/vim.git ~/.vim
+$ git clone *****/vim.git ~/.vim
 $ ln -s ~/.vim/vimrc ~/.vimrc
 $ cd ~/.vim
 $ git submodule init
