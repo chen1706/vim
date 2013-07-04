@@ -1,6 +1,10 @@
-##vim
-配置vim
-vim.git
+##vim配置
+检出：
+$ git clone https://github.com/chen1706/vim.git ~/.vim  or git clone git://github.com/chen1706/vim.git
+$ ln -s ~/.vim/.vimrc ~/.vimrc
+$ cd ~/.vim
+$ git submodule init
+$ git submodule update
 
 ##插件更新
 $ cd ~/.vim/bundle/xxx && git pull origin master                # 更新某个插件
@@ -17,13 +21,6 @@ $ cd ~/.vim && git rm bundle/xxx
 $ git add .
 $ git commit -m '添加插件'
 $ git push origin master
-
-##同步到另一台电脑
-$ git clone https://github.com/chen1706/vim.git ~/.vim
-$ ln -s ~/.vim/vimrc ~/.vimrc
-$ cd ~/.vim
-$ git submodule init
-$ git submodule update
 
 ##安装cscope与vim插件 （网上的）
 
