@@ -26,10 +26,12 @@ $ git submodule init
 $ git submodule update
 
 ##安装cscope与vim插件 （网上的）
-*$ sudo apt-get install cscope
-*$ curl -so ~/.vim/bundle/cscope/plugin/cscope_maps.vim http://cscope.sourceforge.net/cscope_maps.vim
-*$ cscope -Rbkq ~/test/vimtest/zombie_game # 此时在zombie_game文件夹中生成cscope.out文件
-*$ vim                     
+
+* $ sudo apt-get install cscope
+* $ curl -so ~/.vim/bundle/cscope/plugin/cscope_maps.vim http://cscope.sourceforge.net/cscope_maps.vim
+* $ cscope -Rbkq ~/test/vimtest/zombie_game # 此时在zombie_game文件夹中生成cscope.out文件
+* $ vim     
+
 ```
 # 启动vim(下面都是vim命令)
     :pwd                    # 查看当前vim的工作目录
