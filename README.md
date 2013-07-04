@@ -1,5 +1,5 @@
 ##vim
-配置vimd
+配置vim
 vim.git
 
 ##插件更新
