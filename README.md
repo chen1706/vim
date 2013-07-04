@@ -1,5 +1,5 @@
 ##vim配置检出
-* $ git clone https://github.com/chen1706/vim.git ~/.vim  or git clone git://github.com/chen1706/vim.git
+* $ git clone https://github.com/chen1706/vim.git ~/.vim  或者采用 git clone git://github.com/chen1706/vim.git
 * $ ln -s ~/.vim/.vimrc ~/.vimrc
 * $ cd ~/.vim
 * $ git submodule init
