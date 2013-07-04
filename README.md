@@ -1,4 +1,4 @@
-![pic](pic.jpg)
+![pic](http://113.11.199.133/pic.png)
 
 ##vim配置检出
 * $ git clone https://github.com/chen1706/vim.git ~/.vim  或者采用 git clone git://github.com/chen1706/vim.git
