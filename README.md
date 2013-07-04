@@ -37,7 +37,7 @@ $ sudo apt-get install cscope
 $ curl -so ~/.vim/bundle/cscope/plugin/cscope_maps.vim http://cscope.sourceforge.net/cscope_maps.vim
 $ cscope -Rbkq ~/test/vimtest/zombie_game # 此时在zombie_game文件夹中生成cscope.out文件
 $ vim                     
-    # 启动gvim(下面都是vim命令)
+    ''''''# 启动gvim(下面都是vim命令)
     :pwd                    # 查看当前vim的工作目录
     :cd ~/workspace         # 改变当前vim的工作目录为workspace
     :cs add ~/test/vimtest/zombie_game/cscope.out ~/test/vimtest/zombie_game    # 添加cscope.out到cscope数据库中，对应路径，否则会出现找不到文件的错误。
@@ -54,4 +54,4 @@ $ vim
     $ cscope -b
     # 根据cscope.files生成cscope.out数据库文件
     $ vim # 在当前工程里启动vim，然后执行下面的命令连接cscope.out数据库，在前面加上的路径是(.)
-    :cs add cscope.out .
+    :cs add cscope.out .''''''
