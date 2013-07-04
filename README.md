@@ -18,11 +18,6 @@ $ cd ~/.vim/ && git submodule foreach git pull origin master    # 更新所有�
 ##删除插件
 $ cd ~/.vim && git rm bundle/xxx
 
-##同步到github
-$ git add .
-$ git commit -m '添加插件'
-$ git push origin master
-
 ##安装cscope与vim插件 （网上的）
 
 * $ sudo apt-get install cscope
