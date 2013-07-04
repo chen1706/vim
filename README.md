@@ -1,7 +1,7 @@
 ##vim
 配置vim
 vim.git
-
+d
 ##插件更新
 $ cd ~/.vim/bundle/xxx && git pull origin master                # 更新某个插件
 $ cd ~/.vim/ && git submodule foreach git pull origin master    # 更新所有插件
