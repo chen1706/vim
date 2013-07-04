@@ -1,29 +1,29 @@
-vim
+##vim
 ===
 配置vim
 vim.git
 
-插件更新
+##插件更新
 ===
 $ cd ~/.vim/bundle/xxx && git pull origin master                # 更新某个插件
 $ cd ~/.vim/ && git submodule foreach git pull origin master    # 更新所有插件
 
-升级插件
+##升级插件
 ===
 $ cd ~/.vim/bundle/xxx && git pull origin master                # 更新某个插件
 $ cd ~/.vim/ && git submodule foreach git pull origin master    # 更新所有插件
 
-删除插件
+##删除插件
 ===
 $ cd ~/.vim && git rm bundle/xxx
 
-同步到github
+##同步到github
 ===
 $ git add .
 $ git commit -m '添加插件'
 $ git push origin master
 
-同步到另一台电脑
+##同步到另一台电脑
 ===
 $ git clone *****/vim.git ~/.vim
 $ ln -s ~/.vim/vimrc ~/.vimrc
@@ -31,13 +31,14 @@ $ cd ~/.vim
 $ git submodule init
 $ git submodule update
 
-安装cscope与vim插件
+##安装cscope与vim插件
 ===
 $ sudo apt-get install cscope
 $ curl -so ~/.vim/bundle/cscope/plugin/cscope_maps.vim http://cscope.sourceforge.net/cscope_maps.vim
 $ cscope -Rbkq ~/test/vimtest/zombie_game # 此时在zombie_game文件夹中生成cscope.out文件
 $ vim                     
-```# 启动gvim(下面都是vim命令)
+```
+# 启动gvim(下面都是vim命令)
     :pwd                    # 查看当前vim的工作目录
     :cd ~/workspace         # 改变当前vim的工作目录为workspace
     :cs add ~/test/vimtest/zombie_game/cscope.out ~/test/vimtest/zombie_game    # 添加cscope.out到cscope数据库中，对应路径，否则会出现找不到文件的错误。
