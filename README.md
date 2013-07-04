@@ -1,10 +1,9 @@
-##vim配置
-检出：
-$ git clone https://github.com/chen1706/vim.git ~/.vim  or git clone git://github.com/chen1706/vim.git
-$ ln -s ~/.vim/.vimrc ~/.vimrc
-$ cd ~/.vim
-$ git submodule init
-$ git submodule update
+##vim配置检出
+* $ git clone https://github.com/chen1706/vim.git ~/.vim  or git clone git://github.com/chen1706/vim.git
+* $ ln -s ~/.vim/.vimrc ~/.vimrc
+* $ cd ~/.vim
+* $ git submodule init
+* $ git submodule update
 
 ##插件更新
 $ cd ~/.vim/bundle/xxx && git pull origin master                # 更新某个插件
