@@ -7,6 +7,11 @@
 * $ git submodule init
 * $ git submodule update
 
+* cd 
+* vim .bashrc
+* export TERM=xterm-256color
+
+
 ##插件更新
 $ cd ~/.vim/bundle/xxx && git pull origin master                # 更新某个插件
 $ cd ~/.vim/ && git submodule foreach git pull origin master    # 更新所有插件
