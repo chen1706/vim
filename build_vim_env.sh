@@ -29,3 +29,5 @@ git submodule update                                                            
 echo 'export TERM=xterm-256color' >> $pwd/.bashrc                                                                                       |   ~                          
                                                                                                                                         |   ~                          
 source $pwd/.bashrc
+
+exit 0
