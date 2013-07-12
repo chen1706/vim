@@ -57,6 +57,20 @@ let Tlist_File_Fold_Auto_Close=1 "只显示当前文件tag，其它文件的tag�
 let Tlist_Show_One_File=1 "不同时显示多个文件的tag，只显示当前文件的
 let Tlist_Exit_OnlyWindow=1 "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window=1 "在右侧窗口中显示taglist窗口
-" 对齐线
-let g:indent_guides_guide_size=1
-let g:indent_guides_auto_colors=1
+
+" PHP 自动完成
+" 设置自动完成的监听方式：尾部添加一个字母和清除一个字母
+set complete-=k complete+=k
+" 设置字典补全文件
+set dictionary=$HOME/.vim/bundle/vim-php-dict/php.dict
+" 使用 tab 键自动完成或尝试自动完成
+function! InsertTabWrapper()
+    let col=col('.')-1
+    if !col || getline('.')[col-1] !~ '\k'
+        return "\<TAB>"
+    else
+        return "\<C-N>"
+    endif
+endfunction
+" 重新映射 tab 键到 InsertTabWrapper 函数
+inoremap <TAB> <C-R>=InsertTabWrapper()<CR>
